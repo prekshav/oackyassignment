@@ -353,21 +353,10 @@ height: 70%;
 object-fit: cover;
 }
 
-.room-name
-{
-  font-size: 1rem;
-  padding: 1rem;
-  position: absolute;
-  left : 0;
-  
-  z-index: 0;
-  justify-content: space-between;
-  text-align: center;
 
-
-}
 
 .room-deal{
+  
   font-size: 0.5rem;
   padding: 5rem;
   position: absolute;
