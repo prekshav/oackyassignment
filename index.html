@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oacky Development Assignment</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+         <div class="container">
+			<nav class="nav">
+				<a class="logo">
+					<img src="./images/Logo.png" alt="" >
+				</a>
+               
+   					<!--<div class="overlay" style="background-image: url('./images/Rectangle-side.png');"> -->
+					<div class="hamburger-menu">
+    					<a href="#" class="icon" title="Language" >
+      							<i class="fas fa-globe"></i>
+      							<i class="fas fa-chevron-down"></i>
+    					</a>
+  					</div>
+               
+				<!--<div class="hamburger-menu" style="background-image: url('./images/Rectangle-side.png');">	-->
+				<div class="hamburger-menu">		
+					<i class="fas fa-bars"></i>
+					<i class="fas fa-times"></i>
+				</div>
+
+
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Featured</a>						
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Deals</a>						
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Upgrade</a>						
+					</li>					
+
+				</ul>
+
+			</nav>
+			
+		</div>
+    </header>
+
+<main>
+	<div class="hero">
+		<div class="container">
+			<div class="main-heading">
+				<h1 class="title">Welcome!</h1>
+				<br>
+				<h2 class="subtitle">Hope you have a good day.Here are some deals to improve your stay at the Good Hotel. </h2>				
+			</div>
+			<a href="" class="btn">
+				<h5>Get some discounts!</h5>
+			</a>
+		</div>
+	</div><br><br><br><br><br>
+
+<!--middle-->
+	<div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Featured')">Featured</button>
+      <button class="tablinks" onclick="openTab(event, 'Deals')">Deals</button>
+      <button class="tablinks" onclick="openTab(event, 'Upgrade')">Upgrade</button>
+	</div>
+
+<!-- Tab content -->
+<div id="Featured" class="tabcontent">
+  <h3>Featured</h3>  
+  	<h1>Recommended for you </h1>
+  	<h3>Handpicked experiences and deals </h3>
+  </div>
+
+<div id="Deals" class="tabcontent">
+  <h3>Deals</h3>
+  <p></p>
+</div>
+
+<div id="Upgrade" class="tabcontent">
+  <h3>Upgrade</h3>
+  <p></p>
+</div>
+
+
+</main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

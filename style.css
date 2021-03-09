@@ -1,0 +1,318 @@
+/*Import the fonts used*/
+@import url('https://fonts.googleapis.com/css?family=Courgette|stolzl:400,800&display=swap');
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --gray-light: #F5F5F5;
+    --white-solid: #ffff;
+    --gradient-color: linear-gradient(to right, var(--white-solid), var(--gray-light));
+    --gradient-color-alt: linear-gradient(to right, var(--gray-light), var(--white-solid));
+}
+
+/*Global Styles*/
+html
+{
+    font-size: 15px;
+}
+
+body
+{
+
+    font-family: stolzl, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+
+}
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    
+}
+
+ul
+{
+    list-style: none;
+}
+
+section
+{
+    padding: 5rem 0;
+}
+
+/*resusable styles*/
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+
+/*header styles*/
+.header
+{
+
+height: 6rem;
+width: 100%;
+display: flex;
+left: 0;
+top: 0;
+align-items: center;
+justify-content: center;
+position: fixed;
+border-radius: 0px;
+background-color: var(--gray-solid);
+z-index: 999;
+}
+
+
+/*Header Nav Styles*/
+.logo {
+     
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align:center;
+    justify-content: space-between;
+    object-fit: contain;
+
+}
+
+/* Navigation */
+
+.nav {
+    display: flex;
+    padding:0; 
+    list-style:none;
+    text-align:center;
+    justify-content: space-between;
+}
+
+.hamburger-menu
+{
+    font-size: 1.5rem;
+    background: url("./images/Rectangle-side.png")  no-repeat;
+    cursor: pointer;
+    position: all;
+    z-index: 1500;
+
+}
+
+.hamburger-menu .fa-times
+{
+
+ display: none;
+}
+
+.nav-list{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: vat(--purple-solid);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1400;
+    opacity: 0;
+    transform : scale(0);
+    transition: opacity .5s;
+
+}
+
+.menu-open .nav-list{
+     opacity: 1;
+    transform : scale(1);
+
+}
+
+.nav-item:not(:last-child)
+{
+    margin-bottom: 5rem;
+}
+.nav-link
+{
+display: block;
+color: #111111;
+font-size: 3rem;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 2px;
+padding: 1rem;
+}
+/*
+.overlay {
+  position: absolute;
+left: 9.38%;
+right: 3.12%;
+top: 9.38%;
+bottom: 3.12%;}
+
+/* Black */
+
+/*border: 0.5px solid #171516;*/
+
+  
+
+/* When you mouse over the container, fade in the overlay icon*/
+/*
+.container:hover .overlay {
+  opacity: 0;
+}
+*/
+/*
+.icon {
+    color: black;
+    position: absolute;
+    left: auto;
+    right: auto;
+    top: 9.38%;
+    bottom: 3.12%;
+    align-items: left;
+    justify-content: left;
+
+}*/
+
+/*hero section style*/
+/*.hero{
+
+width: 100px;
+height: 100vh;
+background: url("./images/Background.png") center no-repeat;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+top:60px;
+left: 7px;*/
+
+
+.hero{
+position: relative;
+width: 100%;
+height: 50vh;
+left: 5px;
+top: 60px;
+text-align: center;
+background-size: cover;
+align-items: center;
+display: flex;
+color: #fff;
+background: linear-gradient(0deg, rgba(26, 26, 26, 0.5), rgba(26, 26, 26, 0.5)), url(./images/Background.png);
+z-index: 0;
+}
+
+.hero :: before{
+    content: '';
+    position:absolute;
+    width:inherit;  
+    height: inherit;    
+    z-index: -1;
+}
+
+.main-heading
+{
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 2.5rem;
+}
+
+.title
+{
+    font-size: 4rem;
+    letter-spacing: 3px;
+
+}
+
+.subtitle
+{
+font-family: Stolzl;
+font-style: normal;
+font-weight: normal;
+font-size: 2rem;
+line-height: 24px;
+/* or 160% */
+text-align: center;
+
+}
+
+.btn
+{
+color: #fff;
+
+font-size: 1.3rem;
+font-weight: bold;
+border-radius: 18rem;
+text-align: center;
+justify-content: center;
+
+border: 0.5px solid #fff;
+
+}
+
+/*Tab design*/
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #FF5733;
+ 
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
