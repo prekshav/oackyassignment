@@ -305,14 +305,93 @@ border: 0.5px solid #fff;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  text-align: center;
+  justify-content: space-between;
+  animation: fadeEffect 1s;
 }
 
-.tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
 
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+.paragraph
+{
+  color: black;
+  margin-bottom: 2.5rem;
+
+}
+
+/*room section style*/
+.rooms{
+  background-color: #fff;
+
+}
+
+.image-wrap
+{
+
+  position: relative;
+  height: 35rem;
+}
+
+.image-wrap-after
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left:0;
+width: 70%;
+height: 70%;
+}
+
+.room-image{
+  width: 70%;
+height: 70%;
+object-fit: cover;
+}
+
+.room-name
+{
+  font-size: 1rem;
+  padding: 1rem;
+  position: absolute;
+  left : 0;
+  
+  z-index: 0;
+  justify-content: space-between;
+  text-align: center;
+
+
+}
+
+.room-deal{
+  font-size: 0.5rem;
+  padding: 5rem;
+  position: absolute;
+  left : 0;
+  bottom: 2.5rem;
+  z-index: 0;
+}
+
+.room-price
+{
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.room-btn
+{
+  color: var(--dark-color);
+  padding: 0;
+  transition: color .5s;
+
+}
+
+.room-btn
+{
+  color: var(--gray-solid);
 }
